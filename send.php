@@ -14,11 +14,10 @@ while (!feof($fp))//run until end of file
 $header = $_POST['header'];
 $message = $_POST['letter'];
 
-foreach($emails as $email){
-	mail($email, $header, $message);
+foreach($emails as $email)
+{
+	if(!mail($email, $header, $message))
+	{echo"error sending mail";}
 }
 fclose($fp);
-
-echo $header;
-echo $message;
 ?>
