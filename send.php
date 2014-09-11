@@ -1,4 +1,5 @@
 <?php
+/* Process which receives all the emails in the emails.txt file, puts them into an array and sends a message to them.*/
 $emailfile = file('emails.txt');
 $emails = array();
 $fp = fopen('emails.txt', 'r'); //open file
