@@ -1,11 +1,11 @@
 
 <body>
 <div class="container">
-<!-- newsletter form -->
+<!-- newsletter form This is the form that the message to be sent is typed into-->
 	<form class="form-horizontal" action="send.php" method="POST">
 	<fieldset>
 	<!-- Form Name -->
-	<legend>Ovivo Newsletter Admin</legend>
+	<legend>Newsletter</legend>
 	<!-- Text input-->
 	<div class="form-group">
 	  <label class="col-md-2 control-label" for="/header">Header:</label>  
