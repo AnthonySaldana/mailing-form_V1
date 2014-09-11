@@ -1,4 +1,6 @@
 <?php
+/* This is the process which receives the email that is entered into the sign up form, checks for 
+a duplicate and if there is no duplicate, puts it into a txt file.*/
 $customername= strtolower($_POST['name']); //convert input to lowercase
 $customeremail= strtolower($_POST['email']);
 $emails = array();
@@ -9,15 +11,7 @@ while(!feof($fp))
 	$emailholder = trim($emailholder , "\n");
 	$emails[] = $emailholder; //add email to the emails array
 }
-/*foreach($emails as $email)
-{
-	print_r($email);
-	if($customeremail == $email)
-	{	
-		$error = 1;
-		break;
-	}
-}*/
+
 echo<<<newsletterhtml
 <body>
 <div class="container">
